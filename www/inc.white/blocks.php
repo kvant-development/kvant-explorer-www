@@ -1,6 +1,7 @@
 <?php
 
 $jss[] = $item;
+$glob[title][] = "Блоки";
 /*
 $query = "SELECT * FROM stat WHERE name = 'last_block'";
 $res = mysqli_query($con,$query);
