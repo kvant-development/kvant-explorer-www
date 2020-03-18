@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Document</title>
+  <title>{:glob_title:}</title>
+  <meta name="theme-color" content="#dddddd">
+
   <meta name="description" content="" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,13 +38,31 @@
   <link rel="stylesheet" href="css/libs/jquery.formstyler.css?v=e46c3a130e1243916d6e632f3eea3ead">
   <link rel="stylesheet" href="css/libs/slick-theme.css?v=e46c3a130e1243916d6e632f3eea3ead">
   <link rel="stylesheet" href="css/libs/slick.css?v=e46c3a130e1243916d6e632f3eea3ead">
+<!--  <link rel="stylesheet" href="css/libs/awesome.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <!--endinject-->
-  <link rel="stylesheet" href="css/style.css?v=e46c3a130e1243916d6e632f3eea3ead" />
+<?php
+
+    $d = __DIR__;
+    $d = dirname($d);
+    $f = "css/style.css";
+    $f2 = $d."/".$f;
+    $t = filemtime($f2);
+
+    print "<link rel=\"stylesheet\" href=\"$f?$t\" />";
+//  <link rel="stylesheet" href="css/style.css?v=e46c3a130e1243916d6e632f3eea3ead" />
+
+?>
+
   <link rel="stylesheet" href="css/style.responsive.css?v=e46c3a130e1243916d6e632f3eea3ead" />
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js?v=e46c3a130e1243916d6e632f3eea3ead"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js?v=e46c3a130e1243916d6e632f3eea3ead"></script>
 <![endif]-->
+<?php
+print "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>";
+?>
+
 </head>
 
 <body class="white">

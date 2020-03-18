@@ -1,5 +1,7 @@
 <?php
 
+$jss[] = $item;
+/*
 $query = "SELECT * FROM stat WHERE name = 'last_block'";
 $res = mysqli_query($con,$query);
 //$res = mysqli_fetch_assoc($con,$query);
@@ -37,7 +39,7 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
 //$a = raw2json($a);
 //print_r($a);
 
-
+*/
 ?>
       <div class="content">
         <div class="container">
@@ -69,7 +71,7 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
                       </svg>
                     </div>
                   </div>
-                  <div class="balances__num"><?php print $blk;?>
+                  <div class="balances__num" id="p_block_last">>
                   </div>
                   <div class="balances__desc">Последний блок</div>
                 </div>
@@ -81,7 +83,7 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
                       </svg>
                     </div>
                   </div>
-                  <div class="balances__num"><?php print $txs;?>
+                  <div class="balances__num" id="p_txs">
                   </div>
                   <div class="balances__desc">Транзакций</div>
                 </div>
@@ -93,7 +95,7 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
                       </svg>
                     </div>
                   </div>
-                  <div class="balances__num"><?php print $bps2;?> / <?php print $tps2;?>
+                  <div class="balances__num" id="p_bps_tps">&nbsp;
                   </div>
                   <div class="balances__desc">Block Time / Tx Time</div>
                 </div>
@@ -106,291 +108,16 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
                       </svg>
                     </div>
                   </div>
-                  <div class="balances__num">-
+                  <div class="balances__num" id="p_wals">&nbsp;
                   </div>
                   <div class="balances__desc">Кошельков</div>
                 </div>
               </div>
 <?php
-$t1 = $blk-1;
-$t2 = $blk-16;
-$query = "SELECT id,tx,txs,time,size
-, (SELECT hash FROM block_hash WHERE id = t1.id) hash
- FROM block_raw t1 WHERE id BETWEEN $t2 AND $t1 ORDER by id DESC";
-//print $query."<br>";
-$res = mysqli_query($con,$query);
-while($row = mysqli_fetch_assoc($res))
-{
-    $id = $row[id];
-$a = $row[comments];
-$row[addons] = raw2json($a);
-
-    $blks[$id] = $row;
-}
-//print_r($blks);
-//$th[epoch] 	= "Эпоха";
-$th[id] 	= "Высота";
-$th[time] 	= "Время";
-$th[tx] 	= "Tx";
-$th[txs] 	= "Txs";
-
-$th[size] 	= "Size";
-//$th[hz] 	= "&nbsp;";
-$th[hash] 	= "Hash";
-//$th[] = "";
 ?>
 
               <div class="wallet__table wallet__table_blocks">
-                <div class="wallet__table-wrap">
-                  <table class="table">
-                    <thead>
-                      <tr>
-<?php
-reset($th);
-foreach($th as $k=>$v)
-{
-    print "<td>".$v."</td>";
-}
-?>
-<!--
-                        <td>Height</td>
-                        <td>Date</td>
-                        <td>Amount</td>
-                        <td>Fee</td>
-                        <td>Nr TX</td>
-                        <td>Generation</td>
-                        <td>Payload</td>
--->
-                      </tr>
-                    </thead>
-                    <tbody>
-<?php
-
-foreach($blks as $k=>$v3)
-{
-
-    $td = "";
-    reset($th);
-    foreach($th as $k2=>$v2)
-    {
-	$val = $v3[$k2];
-	switch($k2)
-	{
-	    
-	    case "time":
-		$val .= " UTC";
-	    break;
-	    default:
-
-	}
-	    $td .= "<td class=\"$k\">$val</td>";
-    }
-    print "<tr>";
-    print $td;
-    print "</tr>";
-
-}
-
-?>
-<!--
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <a href="">898932</a>
-                        </td>
-                        <td>25.02.3030 20:19:15</td>
-                        <td>3 892,48</td>
-                        <td>2,13</td>
-                        <td>28</td>
-                        <td>
-                          <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                        </td>
-                        <td>9 KB</td>
-                      </tr>
--->
-                    </tbody>
-                  </table>
+                <div class="wallet__table-wrap" id="p_tbl">
                 </div>
               </div>
 
