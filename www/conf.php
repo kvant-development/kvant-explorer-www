@@ -15,7 +15,7 @@ include "../../kvant-func-php/func.php";
 script_time();
 //print __FILE__.":".__LINE__."<br>";die;
 
-//include "conf.sql.php";
+include "conf.sql.php";
 
 $t = $_SERVER['HTTP_HOST'];
 $t = strtoupper($t);
