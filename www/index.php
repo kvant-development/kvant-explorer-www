@@ -110,6 +110,8 @@ $item2 = $t[$i++];
 $item_whats = $t[$i++];
 
 //print_r($t);
+$t2 = "$item $item2 $item_whats";
+print_mas($t2);
 
 //die("=======================");
 }
@@ -203,11 +205,12 @@ if(!$shadow)$inc[] = "info";
 
 }
 
+/*
 $t = explode("_",$item,2);
 $pref = $t[0];
 $item1 = $t[0];
 $item2 = $t[1];
-
+*/
 
 
 
