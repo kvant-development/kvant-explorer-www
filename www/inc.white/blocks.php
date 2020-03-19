@@ -72,7 +72,7 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
                       </svg>
                     </div>
                   </div>
-                  <div class="balances__num" id="p_block_last">>
+                  <div class="balances__num" id="p_block_last">
                   </div>
                   <div class="balances__desc">Последний блок</div>
                 </div>
