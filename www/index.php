@@ -1,5 +1,20 @@
 <?php
 
+
+$f = "/conf.dev.ip.php";
+if(file_exists($f))
+{
+    include $f;
+    $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
+    if(in_array($ip,$ip_debug))
+    {
+    $auth[role][admin] =1;
+    $adm = 1;
+    }
+}
+
+//if($adm) die;
+
 if(1)
 {
 $t = $_SERVER['HTTP_X_FORWARDED_PROTO'];
@@ -55,13 +70,58 @@ switch($auth[user])
 $t = __DIR__;
 $t = dirname($t);
 $t = basename($t);
+$domen = $t;
 
 # дебаг на домен
-if($t=="explorer-test.kvant.io")
+if($domen == "explorer-test2.kvant.io")
 $auth[role][admin] = 1;
 
+//phpinfo();die;
 
-$item = $_GET[item];
+$t = $_SERVER['REQUEST_URI'];
+//if($adm)
+{
+//print "t = $t<br>";
+$t = explode("?",$t,2);
+$t = $t[0];
+//print "t = $t<br>";
+$uri = $t[1];
+$t = explode("/",$t);
+
+unset($t[0]);
+$item_mas = $t;
+
+$lang_mas[ru] = "";
+$lang_mas[en] = "";
+$lang = $t[1];
+if(!isset($lang_mas[$lang]))
+{
+$lang = "ru";
+$i = 1;
+}
+else
+{
+$i = 2;
+}
+//$t2 = $t[0];
+
+$item = $t[$i++];
+$item2 = $t[$i++];
+$item_whats = $t[$i++];
+
+//print_r($t);
+
+//die("=======================");
+}
+//print_mas("eeeeeeeeeeeeeeeeeeeeeeeeeeeeee");
+if($adm)
+{
+//    print "item = $item";die;
+}
+//if(!$lang)
+
+if(!$item)$item = $_GET[item];
+
 if(!$item)
 //$item = "welcome";
 $item = "blocks";
