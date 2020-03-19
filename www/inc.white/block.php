@@ -56,7 +56,7 @@ print "
                 </li>
               </ul>
               <div class="tab-content">
-                <div class="tab-pane active" id="explorer-tab1">
+                <div class="tab-pane" id="explorer-tab1">
                   <div class="wallet__table wallet__table_block">
                     <div class="wallet__table-wrap">
                       <table class="table">
@@ -256,11 +256,38 @@ print "
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="explorer-tab2">
+                <div class="tab-pane active" id="explorer-tab2">
                   <table class="table table-striped">
                     <tbody>
+<?php
+
+unset($mas);
+$mas[blk_hash] = "Хеш блока";
+$mas[blk_time2] = "Время блока";
+$mas[blk_tx] = "Транзакций в блоке";
+$mas[blk_txs] = "Транзакций суммарно";
+$mas[blk_size] = "Размер блока в байтах";
+//$mas[blk_hash_prev] = "Previous Block Hash";
+//$mas[" "] = "&nbsp;";
+
+foreach($mas as $k=>$v)
+{
+
+//$v2 = "";
+//if($v)
+$v2 = $v.":";
+print "
                       <tr>
-                        <td>Previous Block Hash:</td>
+                        <td>$v2</td>
+                        <td id=\"p_$k\"></td>
+                      </tr>
+";
+}
+
+?>
+<!-- 
+                      <tr>
+                        <td>Previous Block Hash</td>
                         <td>bb5aa67b80c9fdcb2198dbfcc7f838019d72b558f83c1e78bcbbd48c3ca3958b</td>
                       </tr>
                       <tr>
@@ -335,6 +362,7 @@ print "
                         <td>Block Generation Time:</td>
                         <td>03.03.2020 18:37:31</td>
                       </tr>
+-->
                     </tbody>
                   </table>
                 </div>
