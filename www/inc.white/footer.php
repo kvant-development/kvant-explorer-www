@@ -118,7 +118,7 @@
               </li>
             </ul>
             <div class="footer__logo">
-              <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="" />
+              <img src="/img/logo-footer.png" srcset="/img/logo-footer@2x.png 2x" alt="" />
             </div>
           </div>
         </div>
