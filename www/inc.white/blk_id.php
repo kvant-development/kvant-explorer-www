@@ -1,0 +1,3 @@
+<?php
+include "block.php";
+?>
