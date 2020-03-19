@@ -110,8 +110,8 @@ $item2 = $t[$i++];
 $item_whats = $t[$i++];
 
 //print_r($t);
-$t2 = "$item $item2 $item_whats";
-print_mas($t2);
+//$t2 = "$item $item2 $item_whats";
+//print_mas($t2);
 
 //die("=======================");
 }
@@ -190,16 +190,9 @@ switch($item)
 
     break;
 
-    case "step1":
-
-    $inc[] = $item;
-if(!$shadow)$inc[] = "kurs";
-if(!$shadow)$inc[] = "txs";
-if(!$shadow)$inc[] = "info";
-    
-    break;
     default:
     $inc[] = $item;
+    $inc[] = $item."_".$item2;
 //    if(!$item)
 //    $item = "exchange";
 
