@@ -3,8 +3,8 @@
 	font-weight: 600;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-SemiBold.eot');
-	src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'), url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-SemiBold.woff') format('woff'), url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+	src: url('/fonts/Gilroy-SemiBold.eot');
+	src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'), url('/fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-SemiBold.woff') format('woff'), url('/fonts/Gilroy-SemiBold.ttf') format('truetype');
 }
 
 @font-face{
@@ -12,8 +12,8 @@
 	font-weight: 300;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-Light.eot');
-	src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Light.woff') format('woff'), url('../fonts/Gilroy-Light.ttf') format('truetype');
+	src: url('/fonts/Gilroy-Light.eot');
+	src: local('Gilroy Light'), local('Gilroy-Light'), url('/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-Light.woff') format('woff'), url('/fonts/Gilroy-Light.ttf') format('truetype');
 }
 
 @font-face{
@@ -21,8 +21,8 @@
 	font-weight: normal;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-Regular.eot');
-	src: local('Gilroy Regular'), local('Gilroy-Regular'), url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Regular.woff') format('woff'), url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	src: url('/fonts/Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'), url('/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-Regular.woff') format('woff'), url('/fonts/Gilroy-Regular.ttf') format('truetype');
 }
 
 @font-face{
@@ -30,8 +30,8 @@
 	font-weight: 500;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-Medium.eot');
-	src: local('Gilroy Medium'), local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype');
+	src: url('/fonts/Gilroy-Medium.eot');
+	src: local('Gilroy Medium'), local('Gilroy-Medium'), url('/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-Medium.woff') format('woff'), url('/fonts/Gilroy-Medium.ttf') format('truetype');
 }
 
 @font-face{
@@ -39,8 +39,8 @@
 	font-weight: 200;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-UltraLight.eot');
-	src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'), url('../fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-UltraLight.woff') format('woff'), url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
+	src: url('/fonts/Gilroy-UltraLight.eot');
+	src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'), url('/fonts/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-UltraLight.woff') format('woff'), url('/fonts/Gilroy-UltraLight.ttf') format('truetype');
 }
 
 @font-face{
@@ -48,8 +48,8 @@
 	font-weight: bold;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-Bold.eot');
-	src: local('Gilroy Bold'), local('Gilroy-Bold'), url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype');
+	src: url('/fonts/Gilroy-Bold.eot');
+	src: local('Gilroy Bold'), local('Gilroy-Bold'), url('/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-Bold.woff') format('woff'), url('/fonts/Gilroy-Bold.ttf') format('truetype');
 }
 
 @font-face{
@@ -57,8 +57,8 @@
 	font-weight: 100;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-Thin.eot');
-	src: local('Gilroy Thin'), local('Gilroy-Thin'), url('../fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Thin.woff') format('woff'), url('../fonts/Gilroy-Thin.ttf') format('truetype');
+	src: url('/fonts/Gilroy-Thin.eot');
+	src: local('Gilroy Thin'), local('Gilroy-Thin'), url('/fonts/Gilroy-Thin.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-Thin.woff') format('woff'), url('/fonts/Gilroy-Thin.ttf') format('truetype');
 }
 
 @font-face{
@@ -66,8 +66,8 @@
 	font-weight: 900;
 	font-style: normal;
 
-	src: url('../fonts/Gilroy-Black.eot');
-	src: local('Gilroy Black'), local('Gilroy-Black'), url('../fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Black.woff') format('woff'), url('../fonts/Gilroy-Black.ttf') format('truetype');
+	src: url('/fonts/Gilroy-Black.eot');
+	src: local('Gilroy Black'), local('Gilroy-Black'), url('/fonts/Gilroy-Black.eot?#iefix') format('embedded-opentype'), url('/fonts/Gilroy-Black.woff') format('woff'), url('/fonts/Gilroy-Black.ttf') format('truetype');
 }
 
 html{
@@ -135,7 +135,7 @@ body.white .footer__bg:before{
 
 	content: '';
 
-	background: url('../img/bg-footer.png') no-repeat;
+	background: url('/img/bg-footer.png') no-repeat;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -345,7 +345,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	width: 32px;
 	height: 45px;
 
-	background-image: url('../img/sprite.png');
+	background-image: url('/img/sprite.png');
 	background-position: 0 0;
 }
 
@@ -353,7 +353,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	width: 32px;
 	height: 45px;
 
-	background-image: url('../img/sprite.png');
+	background-image: url('/img/sprite.png');
 	background-position: -32px 0;
 }
 
@@ -844,7 +844,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	height: 8px;
 
 	border: none;
-	background: url('../img/trigger-arrow.png');
+	background: url('/img/trigger-arrow.png');
 }
 
 .jq-selectbox__dropdown{
@@ -1495,7 +1495,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-main.png');
+	background: url('/img/bg-main.png');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
@@ -1856,7 +1856,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-line.png');
+	background: url('/img/bg-line.png');
 	background-position: center center;
 	background-size: contain;
 }
@@ -1959,7 +1959,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-line.png');
+	background: url('/img/bg-line.png');
 	background-position: center center;
 	background-size: contain;
 }
@@ -1996,7 +1996,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-page2.png');
+	background: url('/img/bg-page2.png');
 	background-position: top left;
 	background-size: cover;
 }
@@ -2036,7 +2036,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-how.png');
+	background: url('/img/bg-how.png');
 }
 
 .section_calc{
@@ -2098,7 +2098,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-page2.png');
+	background: url('/img/bg-page2.png');
 	background-position: top left;
 }
 
@@ -2152,7 +2152,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	        transform: translateX(-50%);
 
 	opacity: 0;
-	background: url('../img/bg-algorythm.png');
+	background: url('/img/bg-algorythm.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -2226,7 +2226,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-roadmap.png');
+	background: url('/img/bg-roadmap.png');
 	background-position: center center;
 }
 
@@ -2245,7 +2245,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-roadmap.png');
+	background: url('/img/bg-roadmap.png');
 	background-position: center center;
 }
 
@@ -2261,7 +2261,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	width: 56px;
 	height: 83px;
 
-	background: url('../img/team-title-icon.png');
+	background: url('/img/team-title-icon.png');
 }
 
 .section_team .section__title-icon{
@@ -2307,7 +2307,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-wallet.png');
+	background: url('/img/bg-wallet.png');
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
@@ -2330,7 +2330,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-wallet-page.png') no-repeat;
+	background: url('/img/bg-wallet-page.png') no-repeat;
 	background-position: top left;
 	background-size: contain;
 }
@@ -2414,7 +2414,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-exchange.png') no-repeat;
+	background: url('/img/bg-exchange.png') no-repeat;
 	background-position: top left;
 	background-size: contain;
 }
@@ -2477,7 +2477,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-exchange.png') no-repeat;
+	background: url('/img/bg-exchange.png') no-repeat;
 	background-position: top left;
 	background-size: contain;
 }
@@ -2535,7 +2535,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-buy.png') no-repeat;
+	background: url('/img/bg-buy.png') no-repeat;
 	background-position: top left;
 	background-size: contain;
 }
@@ -2562,7 +2562,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/icon-kvant-title.svg') no-repeat;
+	background: url('/img/icon-kvant-title.svg') no-repeat;
 }
 
 .section_buy .section__desc{
@@ -2707,7 +2707,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-numbers.png');
+	background: url('/img/bg-numbers.png');
 	background-position: center -100px;
 	background-size: contain;
 }
@@ -2727,7 +2727,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-page.png');
+	background: url('/img/bg-page.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: contain;
@@ -3045,7 +3045,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	height: 11px;
 	height: 11px;
 
-	background: url('../img/steps-line.png');
+	background: url('/img/steps-line.png');
 }
 
 .steps__num{
@@ -3609,7 +3609,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/roadmap-line.png');
+	background: url('/img/roadmap-line.png');
 	background-position: center center;
 }
 
@@ -3980,7 +3980,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-inner.png') no-repeat;
+	background: url('/img/bg-inner.png') no-repeat;
 	background-size: contain;
 }
 
@@ -4011,7 +4011,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-send.png') no-repeat;
+	background: url('/img/bg-send.png') no-repeat;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
@@ -4046,7 +4046,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-inner-left.png') no-repeat;
+	background: url('/img/bg-inner-left.png') no-repeat;
 }
 
 .send__step:after{
@@ -4057,7 +4057,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	width: 160px;
 	height: 630px;
 
-	background: url('../img/bg-inner-right.png') no-repeat;
+	background: url('/img/bg-inner-right.png') no-repeat;
 	background-position: top right;
 }
 
@@ -4331,7 +4331,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-send.png') no-repeat;
+	background: url('/img/bg-send.png') no-repeat;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
@@ -4386,7 +4386,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	-webkit-transform: translate3d(-50%, -50%, 0);
 	        transform: translate3d(-50%, -50%, 0);
 
-	background: url('../img/bg-step-done-icon.png') no-repeat;
+	background: url('/img/bg-step-done-icon.png') no-repeat;
 	background-size: contain;
 }
 
@@ -4544,7 +4544,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: url('../img/bg-send.png') no-repeat;
+	background: url('/img/bg-send.png') no-repeat;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: contain;
@@ -4577,7 +4577,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-inner-left.png') no-repeat;
+	background: url('/img/bg-inner-left.png') no-repeat;
 }
 
 .wallet__wrap:after{
@@ -4589,7 +4589,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 	width: 160px;
 	height: 630px;
 
-	background: url('../img/bg-inner-right.png') no-repeat;
+	background: url('/img/bg-inner-right.png') no-repeat;
 	background-position: top right;
 }
 
@@ -5739,7 +5739,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-process-line.png') no-repeat;
+	background: url('/img/bg-process-line.png') no-repeat;
 	background-size: contain;
 }
 
@@ -5763,7 +5763,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/bg-process.png') no-repeat;
+	background: url('/img/bg-process.png') no-repeat;
 }
 
 .process__item.active:before{
@@ -5786,7 +5786,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 
 .process__item.active.process__item_yellow:before{
-	background: url('../img/bg-process-yellow.png') no-repeat;
+	background: url('/img/bg-process-yellow.png') no-repeat;
 }
 
 .process__item.active.process__item_yellow .process__round .icon{
@@ -5801,7 +5801,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 
 .process__item.active.process__item_green:before{
-	background: url('../img/bg-process-green.png') no-repeat;
+	background: url('/img/bg-process-green.png') no-repeat;
 }
 
 .process__item.active.process__item_green .process__round:before{
@@ -6169,7 +6169,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 	content: '';
 
-	background: url('../img/icon-amounts.svg');
+	background: url('/img/icon-amounts.svg');
 }
 
 .amounts__desc{
