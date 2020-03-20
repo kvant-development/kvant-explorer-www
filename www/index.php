@@ -109,6 +109,7 @@ $item = $t[$i++];
 $item2 = $t[$i++];
 $item_whats = $t[$i++];
 
+$item3 = $item."_".$item2;
 //print_r($t);
 //$t2 = "$item $item2 $item_whats";
 //print_mas($t2);

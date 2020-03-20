@@ -13,7 +13,7 @@ console.log('DEBUG: '+txt);
 $(document).ready(function() 
 {
 
-setInterval(getstat, 1000);
+//setInterval(getstat, 1000);
 getstat();
 })
 //-----------------------------
@@ -21,7 +21,8 @@ getstat();
 
     function getstat() 
     {
-    url = api_addr+'block/txs';
+    url = api_addr+'block/id/'+block_id;
+    console.log(url);
 
     var res = '';
     var p = '';

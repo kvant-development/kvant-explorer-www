@@ -47,76 +47,11 @@ $tps2 = $t4[0].",<span>".$t4[1]." sec</span>";
 
           <div class="wallet wallet_blocks">
             <div class="wallet__wrap">
-              <div class="wallet__top">
-                <h1 class="wallet__top-title">Blocks</h1>
-                <div class="wallet__search-wrap">
-                  <p>All blocks</p>
-                  <form class="wallet__search" action="">
-                    <input class="form-control" type="text" placeholder="Найти по ID" />
-                    <button class="btn" type="submit">
-                      <div class="svg-icon svg-icon_icon-search">
-                        <svg>
-                          <use xlink:href="#icon-search"></use>
-                        </svg>
-                      </div>
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div class="balances">
-                <div class="balances__item">
-                  <div class="balances__icon">
-                    <div class="svg-icon svg-icon_icon-arrows-up">
-                      <svg>
-                        <use xlink:href="#icon-arrows-up"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="balances__num" id="p_block_last">&nbsp;
-                  </div>
-                  <div class="balances__desc">Последний блок</div>
-                </div>
-                <div class="balances__item">
-                  <div class="balances__icon">
-                    <div class="svg-icon svg-icon_icon-copy">
-                      <svg>
-                        <use xlink:href="#icon-copy"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="balances__num" id="p_txs">&nbsp;
-                  </div>
-                  <div class="balances__desc">Транзакций</div>
-                </div>
-                <div class="balances__item">
-                  <div class="balances__icon">
-                    <div class="svg-icon svg-icon_icon-time">
-                      <svg>
-                        <use xlink:href="#icon-time"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="balances__num" id="p_bps_tps">&nbsp;
-                  </div>
-                  <div class="balances__desc">Block Time / Tx Time</div>
-                </div>
 
-                <div class="balances__item">
-                  <div class="balances__icon">
-                    <div class="svg-icon svg-icon_icon-cart">
-                      <svg>
-                        <use xlink:href="#icon-cart"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="balances__num" id="p_wals">&nbsp;
-                  </div>
-                  <div class="balances__desc">Кошельков</div>
-                </div>
-              </div>
 <?php
+$stat_headers_title = "Блоки";
+include "stat_headers.php";
 ?>
-
               <div class="wallet__table wallet__table_blocks">
                 <div class="wallet__table-wrap" id="p_tbl">
                 </div>

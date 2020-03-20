@@ -75,6 +75,91 @@
   $(document).on('click','.header__menu-close',function(){
     $(".header__menu,.header__menu-close").removeClass('active');
   });
+  $(document).on('click','.balances__desc1',function(){
+//    console.log('sssssssssssssssssss');
+    url = '/txs/';
+    location.href=url;
+  });
+  $(document).on('click','.balances__desc2',function(){
+//    console.log('sssssssssssssssssss');
+    url = '/address_all/';
+    location.href=url;
+  });
+  $(document).on('click','.balances__desc3',function(){
+//    console.log('sssssssssssssssssss');
+    url = '/';
+    location.href=url;
+  });
+
+  $(document).on('click','#btn_prev',function(){
+    x = document.getElementById('p_blk');
+    v = x.innerHTML;
+    v2 = v-1;
+    v *= 1;
+    if(v2>0)
+    url = "/blk/id/"+v2;
+    location.href=url;
+  });
+  $(document).on('click','#btn_next',function(){
+    x = document.getElementById('p_blk');
+    v = x.innerHTML;
+    v *= 1;
+    v2 = v+1;
+    url = "/blk/id/"+v2;
+    location.href=url;
+  });
+
+  $(document).on('click','#btn_prev_tx',function(){
+    x = document.getElementById('p_nn2');
+    v = x.innerHTML;
+    v2 = v-1;
+    v *= 1;
+    if(v2>0)
+    url = "/tx/id/"+v2;
+    location.href=url;
+  });
+  $(document).on('click','#btn_next_tx',function(){
+    x = document.getElementById('p_nn2');
+    v = x.innerHTML;
+    v *= 1;
+    v2 = v+1;
+    url = "/tx/id/"+v2;
+    location.href=url;
+  });
+  $(document).on('submit','.wallet__search',function(){
+
+    var val = $('.form-control').val();
+    check_search_data(val);
+    return(false);
+  });
+function check_search_data(val)
+{
+    var url = '';
+    var len = val.length;
+    console.log(len);
+    switch(len)
+    {
+	case 66: 
+	    //tx hash
+    	url = "/tx/hash/"+val;
+	break;
+	case 64: 
+	    //block hash
+    	url = "/blk/hash/"+val;
+	break;
+	case 42:
+	    //wallet
+    	url = "/address/"+val;
+	break;
+	default:
+	if((val*1)==val)
+	url = "/blk/id/"+val;
+    }
+    console.log(url);
+    if(url)
+    location.href = url;
+}
+//$('.form-control').click(function(){alert($('.form-control').val())});
 
   // Калькулятор
   var z = 0;

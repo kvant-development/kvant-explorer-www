@@ -1,8 +1,12 @@
 <div class="pages">
     <ul class="pages__menu">
 <?php
-$k = "./";
+$k = "/";
 $menu[$k] = "Главная";
+
+$k = "/txs";
+$menu[$k] = "Транзакции";
+
 
 if(in_array($item,$logout_item))
 {

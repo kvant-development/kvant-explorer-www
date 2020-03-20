@@ -4867,7 +4867,9 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
     text-align:center;
 	white-space:nowrap;
 }
-.wallet__table .addr
+.wallet__table .addr_to
+,.wallet__table .addr
+,.wallet__table .from
 {
     text-align:center;
 	white-space:nowrap;
@@ -4876,6 +4878,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 {
 /*    min-width: 200px;*/
     white-space:nowrap;
+    text-align:center;
+}
+.wallet__table .zero
+{
+    font-size:20px;
+    color:red;
     text-align:center;
 }
 
@@ -5135,7 +5143,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .wallet__search{
 	position: relative;
 
-	width: 197px;
+	width: 497px;
 	height: 34px;
 	margin-bottom: 7px;
 }
@@ -5395,6 +5403,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .balances__desc{
 	font-size: 15px;
+
+}
+.balances__desc1
+,.balances__desc2
+,.balances__desc3
+{
+	cursor:pointer;
 }
 
 .pagination{

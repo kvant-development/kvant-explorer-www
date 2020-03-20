@@ -1,27 +1,24 @@
 
-var stata = new Array();
-var api_addr = "https://api-test.kvant.io/api/v1/testnet/";
+stata = new Array();
+api_addr = "https://api-test.kvant.io/api/v1/testnet/";
     var x = '';
 //var api_addr = "https://api-test.kvant.io/api/v1/testnet/";
 
-function js_log(txt)
-{
-console.log('DEBUG: '+txt);
-}
 
 //------------------------
 $(document).ready(function() 
 {
 
-setInterval(getstat, 1000);
-getstat();
+//setInterval(getstattxid, 1000);
+getstattxid();
 })
 //-----------------------------
 
 
-    function getstat() 
+    function getstattxid() 
     {
-    url = api_addr+'block/txs';
+    url = api_addr+'tx/id/'+tx_id;
+    console.log(url);
 
     var res = '';
     var p = '';
@@ -41,7 +38,7 @@ getstat();
 		default:
 	    p = 'p_'+k;
 	    stata[p] = v;
-	    //console.log(p+' '+v);
+	    console.log(p+' '+v);
 	    v += '';
 	    if(document.getElementById(p)!==null)
 	    {

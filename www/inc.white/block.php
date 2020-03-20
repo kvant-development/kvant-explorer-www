@@ -1,5 +1,6 @@
 <?php
 $prev = $id-1;
+$prev = 10;
 if($prev<1)$prev = '';
 
 $next = $id+1;
@@ -15,8 +16,9 @@ $next = $id+1;
 if($prev>0)
 {
 $url = "/$item/$item2/$prev";
+$url = "#";
 print "
-                <a class=\"wallet__back-btn btn btn-default blue with-icon\" href=\"$url\">
+                <a class=\"wallet__back-btn btn btn-default blue with-icon\" href=\"$url\" id=\"btn_prev\">
                   <div class=\"icon\">
                     <div class=\"svg-icon svg-icon_icon-arrow\">
                       <svg>
@@ -28,14 +30,15 @@ print "
 ";
 }
 ?>
-                <h1 class="wallet__top-title" id="p_blk">Block: <span><?php print $id?></span>
+                <h1 class="wallet__top-title" >Блок: <b id="p_blk"><?php print $id?></b>
                 </h1>
 <?php
 if($next)
 {
 $url = "/$item/$item2/$next";
+$url = "#";
 print "
-                <a class=\"wallet__next-btn btn btn-default blue with-icon\" href=\"$url\">Вперёд<div class=\"icon\">
+                <a class=\"wallet__next-btn btn btn-default blue with-icon\" href=\"$url\"  id=\"btn_next\">Вперёд<div class=\"icon\">
                     <div class=\"svg-icon svg-icon_icon-arrow\">
                       <svg>
                         <use xlink:href=\"#icon-arrow\"></use>
