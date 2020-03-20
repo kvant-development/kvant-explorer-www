@@ -28,7 +28,7 @@ print "
 ";
 }
 ?>
-                <h1 class="wallet__top-title">Block: <span><?php print $id?></span>
+                <h1 class="wallet__top-title" id="p_blk">Block: <span><?php print $id?></span>
                 </h1>
 <?php
 if($next)
@@ -49,210 +49,16 @@ print "
               </div>
               <ul class="wallet__tabs nav">
                 <li>
-                  <a class="active" href="#explorer-tab1" data-toggle="tab">TRANSTACIONS</a>
+                  <a href="#explorer-tab1" data-toggle="tab">TRANSTACIONS</a>
                 </li>
                 <li>
-                  <a href="#explorer-tab2" data-toggle="tab">BLOCK DETAILS</a>
+                  <a class="active" href="#explorer-tab2" data-toggle="tab">BLOCK DETAILS</a>
                 </li>
               </ul>
               <div class="tab-content">
                 <div class="tab-pane" id="explorer-tab1">
                   <div class="wallet__table wallet__table_block">
-                    <div class="wallet__table-wrap">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <td>Date</td>
-                            <td>Type</td>
-                            <td>Amount</td>
-                            <td>Fee</td>
-                            <td>From</td>
-                            <td>TO</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>25.02.3030 20:19:15</td>
-                            <td>
-                              <div class="wallet__table-icon">
-                                <div class="svg-icon svg-icon_icon-money">
-                                  <svg>
-                                    <use xlink:href="#icon-money"></use>
-                                  </svg>
-                                </div>
-                              </div>
-                            </td>
-                            <td>3 892,48</td>
-                            <td>2,13</td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                            <td>
-                              <a href="">Ktd86793577a309aea4c1eaae22fc5bc32733ac6bac8b5159c67ca24f635494eeb</a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="wallet__table-wrap" id="p_tbl_txs">
                     </div>
                   </div>
                 </div>
