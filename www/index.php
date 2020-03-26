@@ -74,8 +74,8 @@ $t = basename($t);
 $domen = $t;
 
 # дебаг на домен
-if($domen == "explorer-test2.kvant.io")
-$auth[role][admin] = 1;
+//if($domen == "explorer-test2.kvant.io")
+//$auth[role][admin] = 1;
 
 //phpinfo();die;
 
@@ -128,7 +128,7 @@ if(!$item)$item = $_GET[item];
 
 if(!$item)
 //$item = "welcome";
-$item = "blocks";
+$item = "blocks_last";
 
 
 $dir = dirname(__FILE__);
