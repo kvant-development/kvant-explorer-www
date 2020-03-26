@@ -4842,13 +4842,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .wallet__table .nn
 {
-	width: 5%;
+	width: 40px;
 	white-space:nowrap;
+/*	border:solid 3px green;*/
 }
 .wallet__table .id
 {
-	width: 5%;
+	width: 40px;
 	white-space:nowrap;
+        text-align:center;
 }
 .wallet__table .blk_time
 {
@@ -4864,17 +4866,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .wallet__table .nn2
 {
+	width: 50px;
     text-align:center;
 	white-space:nowrap;
 }
+
 .wallet__table .addr_to
 ,.wallet__table .addr
+,.wallet__table .addr_from
 ,.wallet__table .from
 {
     text-align:center;
 	white-space:nowrap;
 }
 .wallet__table .hash
+,.wallet__table .txhash
 {
 /*    min-width: 200px;*/
     white-space:nowrap;
