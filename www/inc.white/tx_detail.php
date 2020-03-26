@@ -81,6 +81,7 @@ $mas[id] = "Блок";
 $mas[addr_from] = "От кого";
 $mas[addr_to] = "Кому";
 $mas[amount] = "Сумма";
+$mas[fee] = "Комиссия";
 $mas[coin] = "Монета";
 //$mas[blk_tx] = "Транзакций в блоке";
 //$mas[blk_txs] = "Транзакций суммарно";
