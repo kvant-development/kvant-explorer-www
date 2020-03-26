@@ -1,12 +1,15 @@
+<?php
+//print_r($ip_debug);die;
+if(in_array($ip,$ip_debug))
+{
+//print "IP=$ip";die;
+?>
+
 <div class="pages">
     <ul class="pages__menu">
 <?php
-$k = "/";
+$k = "./";
 $menu[$k] = "Главная";
-
-$k = "/txs";
-$menu[$k] = "Транзакции";
-
 
 if(in_array($item,$logout_item))
 {
@@ -29,4 +32,6 @@ print "<li>
       <div class="bar"></div>
     </div>
   </div>
-  
+<?php
+}
+?>  
