@@ -22,7 +22,8 @@ getstat();
 
     function getstat() 
     {
-    url = api_addr+'block/txs';
+    var page_limit = 20;
+    url = api_addr+'block/page/'+block_page+'/'+page_limit;
 
     var res = '';
     var p = '';
