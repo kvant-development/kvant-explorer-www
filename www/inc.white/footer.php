@@ -1,3 +1,14 @@
+<?php
+$d = __DIR__;
+$d = dirname($d);
+$d = dirname($d);
+$d = dirname($d);
+$f = "$d/kvant-www-includes/footer.php";
+if(file_exists($f))
+include $f;
+
+/*
+?>
 <footer class="footer" data-multiple-anim="fadeInUp">
         <div class="footer__bg"></div>
         <div class="container">
@@ -118,11 +129,12 @@
               </li>
             </ul>
             <div class="footer__logo">
-              <img src="/img/logo-footer.png" srcset="/img/logo-footer@2x.png 2x" alt="" />
+              <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="" />
             </div>
           </div>
         </div>
       </footer>
     </div>
   </div>
-  
+*/
+?>
