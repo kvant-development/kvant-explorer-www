@@ -158,7 +158,7 @@ if(!$shadow)$inc[] = "header";
 //if(!$shadow)$inc[] = "js";
 if(!$shadow)$inc[] = "svg";
 if(!$shadow)$inc[] = "line_up";
-if(!$shadow)$inc[] = "line_lang";
+//if(!$shadow)$inc[] = "line_lang";
 
 unset($t2);
 $logout_item[] = "my";
