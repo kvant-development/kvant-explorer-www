@@ -59,7 +59,7 @@ include "stat_headers.php";
 
             </div>
 <?php
-//include "paginator.php";
+include "paginator.php";
 ?>
 
 
