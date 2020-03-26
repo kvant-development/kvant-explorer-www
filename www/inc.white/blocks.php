@@ -2,7 +2,8 @@
 
 $jss[] = $item;
 $glob[title][] = "Блоки";
-print "\n<script>var block_page = 1;</script>\n";
+$p = $item2*1;
+print "\n<script>var block_page = '$p';</script>\n";
 ?>
       <div class="content">
         <div class="container">
