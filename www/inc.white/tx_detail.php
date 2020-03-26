@@ -17,8 +17,9 @@ if($prev>0)
 {
 $url = "/$item/$item2/$prev";
 $url = "#";
+//print "                <a class=\"wallet__back-btn btn btn-default blue with-icon\" href=\"$url\" id=\"btn_prev_tx\">";
 print "
-                <a class=\"wallet__back-btn btn btn-default blue with-icon\" href=\"$url\" id=\"btn_prev_tx\">
+                <a class=\"wallet__back-btn btn btn-default blue with-icon\" href=\"/\" id=\"btn_prev_tx\">
                   <div class=\"icon\">
                     <div class=\"svg-icon svg-icon_icon-arrow\">
                       <svg>
@@ -37,6 +38,7 @@ if($next)
 {
 $url = "/$item/$item2/$next";
 $url = "#";
+/*
 print "
                 <a class=\"wallet__next-btn btn btn-default blue with-icon\" href=\"$url\"  id=\"btn_next_tx\">Вперёд<div class=\"icon\">
                     <div class=\"svg-icon svg-icon_icon-arrow\">
@@ -47,6 +49,7 @@ print "
                   </div>
                 </a>
 ";
+*/
 }
 ?>
               </div>
