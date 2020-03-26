@@ -10,7 +10,7 @@ $glob[title][] = "Последние блоки";
             <div class="wallet__wrap">
 
 <?php
-$stat_headers_title = "Последние локи";
+$stat_headers_title = "Последние блоки";
 include "stat_headers.php";
 ?>
               <div class="wallet__table wallet__table_blocks">
