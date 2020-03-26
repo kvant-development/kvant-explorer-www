@@ -23,7 +23,8 @@ getstat();
     function getstat() 
     {
     var page_limit = 20;
-    url = api_addr+'block/page/'+block_page+'/'+page_limit;
+//    url = api_addr+'block/page/'+block_page+'/'+page_limit;
+    url = api_addr+'block/page/'+block_page;
 
     var res = '';
     var p = '';
