@@ -1,5 +1,6 @@
+<?php include "init.php"; ?>
 
-api_addr = "https://api-test.kvant.io/api/v1/testnet/";
+//api_addr = "https://api-test.kvant.io/api/v1/testnet/";
 
 setInterval(getblockstat, 1000);
 getblockstat();

@@ -1,6 +1,8 @@
+<?php include "init.php"; ?>
+
 
 stata = new Array();
-api_addr = "https://api-test.kvant.io/api/v1/testnet/";
+//api_addr = "https://api-test.kvant.io/api/v1/testnet/";
     var x = '';
 //var api_addr = "https://api-test.kvant.io/api/v1/testnet/";
 
