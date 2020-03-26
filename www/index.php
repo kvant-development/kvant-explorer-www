@@ -1,11 +1,12 @@
 <?php
 
+$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 
 $f = "/conf.dev.ip.php";
 if(file_exists($f))
 {
     include $f;
-    $ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
+
     if(in_array($ip,$ip_debug))
     {
     $auth[role][admin] =1;

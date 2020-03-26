@@ -17,6 +17,7 @@ if($prev>0)
 {
 $url = "/$item/$item2/$prev";
 $url = "#";
+$url = "/";
 print "
                 <a class=\"wallet__back-btn btn btn-default blue with-icon\" href=\"$url\" id=\"btn_prev\">
                   <div class=\"icon\">
@@ -33,7 +34,7 @@ print "
                 <h1 class="wallet__top-title" >Блок: <b id="p_blk"><?php print $id?></b>
                 </h1>
 <?php
-if($next)
+if($next && 0)
 {
 $url = "/$item/$item2/$next";
 $url = "#";
