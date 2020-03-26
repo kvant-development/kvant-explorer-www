@@ -47,9 +47,25 @@
                       </svg>
                     </div>
                   </div>
+<?php
+/*
+print "                  <div class=\"balances__num\" id=\"p_bps_tps\">&nbsp;
+                  </div>
+                  <div class=\"balances__desc\">Block Time / Tx Time</div>
+";
+
+*/
+print "                  <div class=\"balances__num\" id=\"p_bps\">&nbsp;
+                  </div>
+                  <div class=\"balances__desc\">Block Time</div>
+";
+
+?>
+<!--
                   <div class="balances__num" id="p_bps_tps">&nbsp;
                   </div>
                   <div class="balances__desc">Block Time / Tx Time</div>
+-->
                 </div>
 
                 <div class="balances__item">
