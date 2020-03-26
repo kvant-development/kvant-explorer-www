@@ -1,4 +1,4 @@
-<?php include "init.php"; ?>
+<?php require_once "init.php"; ?>
 
 
 stata = new Array();

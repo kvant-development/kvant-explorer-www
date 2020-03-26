@@ -1,4 +1,4 @@
-<?php include "init.php"; ?>
+<?php require_once "init.php"; ?>
 
 stata = new Array();
 //api_addr = "https://api-test.kvant.io/api/v1/testnet/";

@@ -1,4 +1,4 @@
-<?php include "init.php"; ?>
+<?php require_once "init.php"; ?>
 
 var table_length = '';
 var compare_flag = 1;
