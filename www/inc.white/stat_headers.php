@@ -57,7 +57,7 @@ print "                  <div class=\"balances__num\" id=\"p_bps_tps\">&nbsp;
 */
 print "                  <div class=\"balances__num\" id=\"p_bps\">&nbsp;
                   </div>
-                  <div class=\"balances__desc\">Block Time</div>
+                  <div class=\"balances__desc\">Время блока</div>
 ";
 
 ?>
