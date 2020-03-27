@@ -9,11 +9,11 @@
                   <div class="wallet__head">
                     <h3 class="wallet__title">Баланс кошелька KVANT</h3>
                     <div class="wallet__icon wallet__icon_wallet">
-                      <a href="http://wallet.kvant.io" class="svg-icon svg-icon_icon-wallet-stroke" target=_blank>
+                      <div onclick=location.href="http://wallet.kvant.io" class="svg-icon svg-icon_icon-wallet-stroke">
                         <svg>
                           <use xlink:href="#icon-wallet-stroke"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
                   </div>
                   <div class="wallet__content">
