@@ -7,7 +7,7 @@
                 <h1 class="wallet__top-title">Кошелек</h1>
                 <div class="wallet__block wallet__block_wallet">
                   <div class="wallet__head">
-                    <h3 class="wallet__title">Баланс кошелька KVANT</h3>
+                    <h3 class="wallet__title">Баланс кошелька KVNT</h3>
                     <div class="wallet__icon wallet__icon_wallet">
                       <div onclick=location.href="http://wallet.kvant.io" class="svg-icon svg-icon_icon-wallet-stroke">
                         <svg>
