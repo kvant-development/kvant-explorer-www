@@ -8,5 +8,5 @@ print "            <a href=/><img src=\"/img/logo-black.png\" srcset=\"/img/logo
 ?>
           </div>
           <div class="header__right">
-            <a class="btn btn-primary pink" href="">Купить KVNT</a>
+            <a class="btn btn-primary pink" href="https://sale.kvant.io" target=_blank>Купить KVNT</a>
             
