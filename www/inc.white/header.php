@@ -63,6 +63,7 @@
 print "<script src=\"//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>";
 ?>
 
+<script src="//code-ya.jivosite.com/widget/7z04VKveWz" async></script>
 </head>
 
 <body class="white">
